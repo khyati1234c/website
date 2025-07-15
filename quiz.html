@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Space Quiz</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fact.html">FunFact</a>
+            <a href="know.html">Did You Know</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="video.html">Video</a>
+            </nav>
+    </header>
+   <main>
+    <p>What do we call a large group of stars, gas, and dust held together by gravity?</p>
+    <button onclick="check_answer('Galaxy')">
+        Galaxy
+    </button>
+    <button onclick="check_answer('Nebula')">
+        Nebula
+    </button>
+    <button onclick="check_answer('Comet')">Comet</button>
+    <p id="result"></p>
+   </main>
+<footer>
+    <p>&copy; 2025 Khyati Verma</p>
+</footer>
+<script>
+    function check_answer(ans){
+     var result=document.getElementById("result")
+     if (ans=="Galaxy")
+     {
+        result.textContent="correct answer"
+     }
+     else{
+        result.textContent="Try Again!"
+     }
+    }
+</script>
+</body>
+</html>
